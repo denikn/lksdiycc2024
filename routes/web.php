@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('lksdiycc');
 });
+
+Route::get('/upload', 'App\Http\Controllers\UploadController@upload');
+Route::post('/upload/proses', 'App\Http\Controllers\UploadController@proses_upload');
+Route::get('/upload/hapus/{id}', 'App\Http\Controllers\UploadController@hapus');
