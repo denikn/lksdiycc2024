@@ -6,7 +6,8 @@ use File;
 use Illuminate\Http\Request;
  
 use App\Models\Image;
- 
+use Illuminate\Support\Facades\Storage;
+
 class UploadController extends Controller
 {
 	public function upload(){
@@ -26,8 +27,11 @@ class UploadController extends Controller
 		$nama_file = time()."_".$file->getClientOriginalName();
  
         // isi dengan nama folder tempat kemana file diupload
-		$tujuan_upload = 'data_file';
+		$tujuan_upload = 'files';
 		$file->move($tujuan_upload,$nama_file);
+
+        $path = Storage::disk('s3')->put('files/' . $nama_file, public_path('files/' . $nama_file));
+        $path = Storage::disk('s3')->url($path);
  
 		Image::create([
 			'file' => $nama_file,
@@ -40,7 +44,7 @@ class UploadController extends Controller
     public function hapus($id){
 		// hapus file
 		$gambar = Image::where('id',$id)->first();
-		File::delete('data_file/'.$gambar->file);
+		File::delete('files/'.$gambar->file);
  
 		// hapus data
 		Image::where('id',$id)->delete();
