@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Jobs\ExampleJob;
+use App\Jobs\HelloWorldJob;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,10 @@ Route::get('/', function () {
 Route::get('/upload', 'App\Http\Controllers\UploadController@upload');
 Route::post('/upload/proses', 'App\Http\Controllers\UploadController@proses_upload');
 Route::get('/upload/hapus/{id}', 'App\Http\Controllers\UploadController@hapus');
+
+Route::get('/test-queue', function () {
+    dispatch(new ExampleJob);
+    dispatch(new HelloWorldJob("Hello world dari Serverless ID!"));
+
+    return "ExampleJob dan HelloWorldJob sedang dijalankan!";
+});
