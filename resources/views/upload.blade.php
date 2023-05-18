@@ -50,7 +50,7 @@
 					<tbody>
 						@foreach($gambar as $g)
 						<tr>
-							<td><img width="150px" src="{{ url('/files/'.$g->file) }}"></td>
+							<td><a href="{{ url('/cache/'.$g->file) }}" target="_blank"><img width="150px" src="{{ url('/files/'.$g->file) }}"></a></td>
 							<td>{{$g->notes}}</td>
 							<td><a class="btn btn-danger" href="/upload/hapus/{{ $g->id }}">HAPUS</a></td>
 						</tr>

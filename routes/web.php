@@ -25,6 +25,8 @@ Route::get('/upload/hapus/{id}', 'App\Http\Controllers\UploadController@hapus');
 
 Route::get('/cache/{nama_file}', 'App\Http\Controllers\UploadController@testCache');
 
+Route::view('/navigation', 'navigation');
+
 Route::get('/test-queue', function () {
     dispatch(new ExampleJob);
     dispatch(new HelloWorldJob("Hello world dari Serverless ID!"));

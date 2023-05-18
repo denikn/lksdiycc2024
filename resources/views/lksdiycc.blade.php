@@ -295,7 +295,7 @@
         <h2>Selamat datang di LKS SMK DIY 2023 bidang Cloud Computing</h2>
         <p>Jika kamu bisa membuka halaman ini, berarti kamu sudah berhasil deploy aplikasi web yang disediakan. Selamat! ^^
         </p>
-        <button class="btn green">HOME</button>
+        <a href="/navigation" class="btn green">MENU</a>
       </div>
     </div>
   </div>
