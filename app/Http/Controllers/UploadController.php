@@ -6,6 +6,7 @@ use File;
 use Illuminate\Http\Request;
  
 use App\Models\Image;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 
 class UploadController extends Controller
@@ -37,6 +38,11 @@ class UploadController extends Controller
 			'file' => $nama_file,
 			'notes' => $request->notes,
 		]);
+
+		Cache::put($nama_file, [
+			'file' => $nama_file,
+			'notes' => $request->notes
+		]);
  
 		return redirect()->back();
 	}
@@ -50,5 +56,14 @@ class UploadController extends Controller
 		Image::where('id',$id)->delete();
  
 		return redirect()->back();
+	}
+
+	public function testCache($nama_file){
+		$cache = Cache::get($nama_file);
+
+		if (empty($cache))
+			return ['status' => 2, 'message' => 'Not found'];
+
+		return ['status' => 1, 'message' => 'Data retrieved', 'data' => $cache];
 	}
 }

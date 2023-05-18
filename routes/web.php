@@ -23,6 +23,8 @@ Route::get('/upload', 'App\Http\Controllers\UploadController@upload');
 Route::post('/upload/proses', 'App\Http\Controllers\UploadController@proses_upload');
 Route::get('/upload/hapus/{id}', 'App\Http\Controllers\UploadController@hapus');
 
+Route::get('/cache/{nama_file}', 'App\Http\Controllers\UploadController@testCache');
+
 Route::get('/test-queue', function () {
     dispatch(new ExampleJob);
     dispatch(new HelloWorldJob("Hello world dari Serverless ID!"));
