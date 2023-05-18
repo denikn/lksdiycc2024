@@ -1,8 +1,5 @@
 # LKS Cloud Computing DIY 2023
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-
 Repository ini merupakan aplikasi berbasis web yang digunakan untuk seleksi LKS DIY 2023 bidang Cloud Computing.
 
 ```
