@@ -1,21 +1,14 @@
-# LKS Cloud Computing DIY 2023
+# LKS Cloud Computing DIY 2024
 
-Repository ini merupakan aplikasi berbasis web yang digunakan untuk seleksi LKS DIY 2023 bidang Cloud Computing.
+Repository ini merupakan aplikasi berbasis web yang digunakan untuk seleksi LKS DIY 2024 bidang Cloud Computing.
 
 ```
-   ...    *    .   _  .
-*  .  *     .   * (_)   *
-  .      |*  ..   *   ..
-   .  * \|  *  ___  . . *
-*   \/   |/ \/{o,o}     .
-  _\_\   |  / /)  )* _/_ *
-      \ \| /,--"-"---  ..
-_-----`  |(,__,__/__/_ .
-       \ ||      ..
-        ||| .            *
-        |||
-lkscc   |||
-  , -=-~' .-^- _
+‌‌         ∩∩   ♡      i will always be
+       (  . .̫ . )     here for supporting
+ 〃 ∩    ◜◝U-U◜◝       and loving you ..
+ ⊂   ⌒ (   。・ ㉨ ・  )
+    ヽ  _ つ＿/￣￣￣/
+　 　     ＼/＿＿＿/
 ```
 
 ## Requirements
@@ -84,6 +77,17 @@ php artisan migrate
 ```bash
 php -S localhost:8000 -t public
 ```
+
+## Dockerize
+By default, the scripts required to dockerize this project are `Dockerfile` and `docker-compose.yml`. The script is provided in this repository. Here's how to build and run the docker containers.
+```
+docker compose build
+docker compose up -d
+```
+
+## Notes
+Feel free to edit and adjust this docker configuration to fit with your server environment
+
 
 ## License and Copyright
 

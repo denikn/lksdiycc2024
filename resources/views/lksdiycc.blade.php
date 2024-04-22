@@ -292,7 +292,7 @@
       </div>
       <div class="col-md-6 align-self-center">
         <h1>Hello! ^^</h1>
-        <h2>Selamat datang di LKS SMK DIY 2023 bidang Cloud Computing</h2>
+        <h2>Selamat datang di LKS SMK DIY 2024 bidang Cloud Computing</h2>
         <p>Jika kamu bisa membuka halaman ini, berarti kamu sudah berhasil deploy aplikasi web yang disediakan. Selamat! ^^
         </p>
         <a href="/navigation" class="btn green">MENU</a>
