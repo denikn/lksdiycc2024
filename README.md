@@ -18,8 +18,8 @@ Repository ini merupakan aplikasi berbasis web yang digunakan untuk seleksi LKS 
 ## Getting started
 ### Clone the repo:
 ```bash
-git clone --depth 1 https://github.com/denikn/lksdiycc2023
-cd lksdiycc2023
+git clone --depth 1 https://github.com/denikn/lksdiycc2024
+cd lksdiycc2024
 rm -rf .git
 ```
 
