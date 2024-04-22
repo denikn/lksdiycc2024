@@ -3,19 +3,12 @@
 Repository ini merupakan aplikasi berbasis web yang digunakan untuk seleksi LKS DIY 2024 bidang Cloud Computing.
 
 ```
-   ...    *    .   _  .
-*  .  *     .   * (_)   *
-  .      |*  ..   *   ..
-   .  * \|  *  ___  . . *
-*   \/   |/ \/{o,o}     .
-  _\_\   |  / /)  )* _/_ *
-      \ \| /,--"-"---  ..
-_-----`  |(,__,__/__/_ .
-       \ ||      ..
-        ||| .            *
-        |||
-lkscc   |||
-  , -=-~' .-^- _
+‌‌         ∩∩   ♡      i will always be
+       (  . .̫ . )     here for supporting
+ 〃 ∩    ◜◝U-U◜◝       and loving you lkscc..
+ ⊂   ⌒ (   。・ ㉨ ・  )
+    ヽ  _ つ＿/￣￣￣/
+　 　     ＼/＿＿＿/
 ```
 
 ## Requirements
