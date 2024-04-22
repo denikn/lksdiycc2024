@@ -54,7 +54,7 @@ AWS_BUCKET=
 AWS_USE_PATH_STYLE_ENDPOINT=false
 ```
 
-### Set SQS on .env (fill your AWS SQS config):
+<!-- ### Set SQS on .env (fill your AWS SQS config):
 ```bash
 QUEUE_DRIVER=sqs
 QUEUE_CONNECTION=sqs
@@ -63,7 +63,7 @@ SQS_SECRET=<aws_secret_access_key>
 SQS_QUEUE=<queue name>
 SQS_REGION=ap-southeast-2
 SQS_PREFIX=https://sqs.ap-southeast-2.amazonaws.com/<aws_account_id>
-```
+``` -->
 
 ### Install dependencies:
 ```bash
