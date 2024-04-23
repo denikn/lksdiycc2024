@@ -95,23 +95,6 @@ By default, the scripts required to dockerize this project are `.docker` and `do
 ### Laravel App
 - URL: http://localhost
 
-### Mailpit
-- URL: http://localhost:8025
-
-### phpMyAdmin
-- URL: http://localhost:8080
-- Server: `db`
-- Username: `refactorian`
-- Password: `refactorian`
-- Database: `refactorian`
-
-### Adminer
-- URL: http://localhost:9090
-- Server: `db`
-- Username: `refactorian`
-- Password: `refactorian`
-- Database: `refactorian`
-
 ### Basic docker compose commands
 - Build or rebuild services
     - `docker compose build`
