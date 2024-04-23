@@ -83,8 +83,8 @@ php -S localhost:8000 -t public
 ## Dockerize
 By default, the scripts required to dockerize this project are `.docker` and `docker-compose.yml`. The script is provided in this repository. Here's how to build and run the docker containers.
 ### For first time only !
-- `git clone https://github.com/refactorian/laravel-docker.git`
-- `cd laravel-docker`
+- `git clone https://github.com/denikn/lksdiycc2024`
+- `cd lksdiycc2024`
 - `docker compose up -d --build`
 - `docker compose exec php bash`
 - `composer setup`
